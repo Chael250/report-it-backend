@@ -9,9 +9,17 @@ const PORT: number | string = process.env.PORT || 3000;
 
 // Middleware
 app.use(cors({
-  origin: 'http://localhost:8080',
+  origin: 'https://report-it-frontend.vercel.app',
   credentials: true
 }));
+
+// Also allow localhost for development
+if (process.env.NODE_ENV === 'development') {
+  app.use(cors({
+    origin: 'http://localhost:8080',
+    credentials: true
+  }));
+}
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));

@@ -1,15 +1,34 @@
-# Report-It Backend
+# Report-It Backend (MVP)
 
-This is the backend repository for the Report-It citizen complaint management system. It's built with Node.js, Express, and PostgreSQL, providing a RESTful API for complaint management.
+This is an MVP version of the backend repository for the Report-It citizen complaint management system. It demonstrates core API functionality for complaint management using Node.js, Express, and PostgreSQL.
+
+## Current Status
+This is an MVP version demonstrating core functionality. The system includes basic API endpoints but lacks many features that would be required for production use. It serves as a foundation that can be built upon to create a full-fledged complaint management system.
+
+## Deployment URLs
+- Backend: https://report-it-backend.onrender.com/
+- Frontend: https://report-it-frontend.vercel.app/
 
 ## Features
 
 - RESTful API endpoints for complaints and agencies
 - PostgreSQL database integration
 - Prisma ORM for database operations
-- Authentication and authorization
+- Basic authentication and authorization
 - Input validation and error handling
 - CORS support
+
+Note: This MVP version includes basic features. In a full production version, additional features would be implemented, such as:
+- Advanced authentication system
+- File attachments for complaints
+- Real-time status updates
+- Advanced search and filtering
+- Analytics dashboard
+- Mobile app integration
+- Push notifications
+- Integration with GIS systems
+- Escalation workflows
+- Reporting and analytics
 
 ## Getting Started
 
